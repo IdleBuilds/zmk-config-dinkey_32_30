@@ -88,12 +88,12 @@
             key-positions = <16 26>;
             layers = <0>;
         };
-        combo_quest {
+        combo_slash {
             bindings = <&kp SLASH>;
             key-positions = <17 27>;
             layers = <0>;
         };
-        combo_quest {
+        combo_semi {
             bindings = <&kp SEMI>;
             key-positions = <18 28>;
             layers = <0>;
