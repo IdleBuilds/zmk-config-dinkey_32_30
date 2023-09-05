@@ -1,24 +1,24 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_DINKEY32_30_LEFT
+if SHIELD_DINKEY_32_30_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Dinkey32|30"
+	default "Dinkey_32|30"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_DINKEY34_RIGHT
+if SHIELD_DINKEY_34_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "Dinkey32_30 Right"
+	default "Dinkey_32_30 Right"
 
 endif
 
-if SHIELD_DINKEY32_30_LEFT || SHIELD_DINKEY32_30_RIGHT
+if SHIELD_DINKEY_32_30_LEFT || SHIELD_DINKEY_32_30_RIGHT
 
 config ZMK_SPLIT
 	default y

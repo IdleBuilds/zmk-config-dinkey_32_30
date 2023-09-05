@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "dinkey32_30.dtsi"
+#include "dinkey_32_30.dtsi"
 
 &kscan0 {
 col-gpios
