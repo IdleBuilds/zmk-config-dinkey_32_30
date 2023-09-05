@@ -1,8 +1,8 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_DINKEY32_30_LEFT
+config SHIELD_DINKEY_32_30_LEFT
 	def_bool $(shields_list_contains,dinkey_32_30_left)
 
-config SHIELD_DINKEY32_30_RIGHT
+config SHIELD_DINKEY_32_30_RIGHT
 	def_bool $(shields_list_contains,dinkey_32_30_right)
