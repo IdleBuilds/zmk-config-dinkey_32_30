@@ -107,19 +107,19 @@
 
         base_layer {
             bindings = <
-    &kp Q  &kp W  &kp E  &kp R           &kp T      &kp Y          &kp U      &kp I    &kp O      &kp P
-    &kp A  &kp S  &kp D  &kp F           &kp G      &kp H          &kp J      &kp K    &kp L   &kp P
-    &kp Z  &kp X  &kp C  &kp V           &kp B      &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                     &mo 1  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE
+    &kp Q  &kp W  &kp E  &kp R   &kp T                &kp Y  &kp U  &kp I      &kp O    &kp P
+    &kp A  &kp S  &kp D  &kp F   &kp G                &kp H  &kp J  &kp K      &kp L    &kp P
+    &kp Z  &kp X  &kp C  &kp V   &kp B                &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+                         &mo 1  &kp LEFT_SHIFT        &kp SPACE     &kp BACKSPACE
             >;
         };
 
         layer_1 {
             bindings = <
-        &kp ESCAPE        &kp ESCAPE        &kp UP_ARROW   &kp LEFT_BRACKET  &kp RIGHT_BRACKET               &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DIVIDE
-    &kp Q             &kp LEFT          &kp DOWN       &kp RIGHT         &kp BACKSLASH                   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE
-    &kp LEFT_CONTROL  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_DEL      &kp LEFT_SHIFT                  &kp MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL
-                                                       &trans            &trans                          &kp SPACE     &kp BACKSPACE
+      &kp ESCAPE  &kp ESCAPE        &kp UP_ARROW   &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp PLUS        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DOT
+      &kp Q       &kp LEFT          &kp DOWN       &kp RIGHT         &kp BSLH               &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE
+      &TRANS      &kp LEFT_CONTROL  &kp LEFT_ALT   &kp DEL           &kp LEFT_SHIFT         &kp KP_MULTIPLY &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL
+                                                   &trans            &trans                 &kp SPACE       &kp BACKSPACE
             >;
         };
 
