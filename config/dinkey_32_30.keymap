@@ -116,10 +116,10 @@
 
         layer_1 {
             bindings = <
-    &kp ESCAPE        &kp ESCAPE        &kp UP_ARROW   &kp LEFT_BRACKET  &kp RIGHT_BRACKET               &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DIVIDE
-    &kp Q             &kp LEFT          &kp DOWN       &kp RIGHT         &kp BSLH                        &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE
-    &kp LEFT_CONTROL  &kp LEFT_CONTROL  &kp LEFT_ALT   &kp LEFT_DEL      &kp LEFT_SHIFT                  &kp MULTIPLY   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL
-                                                                         &trans            &trans        &kp SPACE  &kp BACKSPACE
+     &kp ESCAPE  &kp LEFT_BRACKET  &kp UP_ARROW  &kp RIGHT_BRACKET          &kp BSLH         &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DIVIDE
+         &kp TAB          &kp LEFT      &kp DOWN          &kp RIGHT  &kp SINGLE_QUOTE        &kp MINUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6     &kp KP_DOT
+&kp LEFT_CONTROL      &kp LEFT_ALT       &kp DEL     &kp LEFT_SHIFT         &kp TILDE  &kp KP_MULTIPLY   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp KP_EQUAL
+                                                             &trans            &trans        &kp SPACE  &kp BACKSPACE
             >;
         };
 
