@@ -7,7 +7,7 @@
 #include "dinkey_32_30.dtsi"
 
 &default_transform {
-	col-offset = <5>;
+	col-offset = <17>;
 };
 
     &kscan0 {

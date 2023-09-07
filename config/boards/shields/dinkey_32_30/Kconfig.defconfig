@@ -4,14 +4,14 @@
 if SHIELD_DINKEY_32_30_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Dinkey_32|30"
+	default "Dinkey 32|30"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_DINKEY_34_RIGHT
+if SHIELD_DINKEY_32_30_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "Dinkey_32_30 Right"
