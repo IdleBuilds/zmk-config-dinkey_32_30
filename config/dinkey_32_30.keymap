@@ -12,6 +12,18 @@
     combos {
         compatible = "zmk,combos";
 
+        combo_q{
+            bindings = <&kp Q>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        combo_z{
+            bindings = <&kp Z>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
         combo_lower {
             bindings = <&mo 2>;
             key-positions = <24 30>;
@@ -72,8 +84,8 @@
             layers = <0>;
         };
 
-        combo_0 {
-            bindings = <&kp NUMBER_0>;
+        combo_DOT {
+            bindings = <&kp DOT>;
             key-positions = <16 26>;
             layers = <1>;
         };
@@ -107,27 +119,27 @@
 
         base_layer {
             bindings = <
-    &kp A  &kp W  &kp E  &kp R   &kp T                &kp Y  &kp U  &kp I      &kp O    &kp P
+    &kp   &kp W  &kp E  &kp R   &kp T                &kp Y  &kp U  &kp I      &kp O    &kp SLASH
     &kp A  &kp S  &kp D  &kp F   &kp G                &kp H  &kp J  &kp K      &kp L    &kp P
-    &kp Q  &kp X  &kp C  &kp V   &kp B                &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+    &kp A  &kp X  &kp C  &kp V   &kp B                &kp N  &kp M  &kp COMMA  &kp DOT  &kp P
                          &mo 1  &kp LEFT_SHIFT        &kp SPACE     &kp BACKSPACE
             >;
         };
 
         layer_1 {
             bindings = <
-      &kp ESCAPE  &kp ESCAPE        &kp UP_ARROW   &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp PLUS        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_DIVIDE
-      &kp Q       &kp LEFT          &kp DOWN       &kp RIGHT         &kp BSLH               &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_DIVIDE
-      &kp Z      &kp LEFT_CONTROL  &kp LEFT_ALT   &kp DEL           &kp LEFT_SHIFT          &kp KP_MULTIPLY &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT
-                                                   &trans            &trans                 &kp SPACE       &kp BACKSPACE
+      &kp LEFT_SHIFT  &kp ESCAPE        &kp UP_ARROW   &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &kp PLUS        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT
+      &kp LEFT_SHIFT  &kp LEFT          &kp DOWN       &kp RIGHT         &kp BSLH               &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+      &kp TAB         &kp LEFT_CONTROL  &kp LEFT_ALT   &kp DEL           &kp KP_EQUAL           &kp KP_MULTIPLY &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+                                                      &trans            &trans                  &kp SPACE       &kp BACKSPACE
             >;
         };
 
         layer_2 {
             bindings = <
-    &bootloader  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans      &bt BT_CLR
-    &kp Z  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans      &trans
-    &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &trans
+    &bootloader  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans      &bt BT_CLR
+    &kp Z  &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans      &trans
+    &trans  &trans  &trans  &trans  &trans  &trans         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &trans
                              &trans  &trans  &trans        &trans
             >;
         };
