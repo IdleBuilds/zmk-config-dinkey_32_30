@@ -17,3 +17,5 @@ include:
     shield: dinkey_32_30_left nice_view_adapter nice_view
   - board: nice_nano_v2
     shield: dinkey_32_30_right nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: settings_reset
