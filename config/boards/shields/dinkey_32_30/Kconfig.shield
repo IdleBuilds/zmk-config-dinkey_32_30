@@ -1,8 +1,13 @@
-# Copyright (c) 2021 The ZMK Contributors
+# Copyright (c) 2023 Idle Builds
 # SPDX-License-Identifier: MIT
 
+config SHIELD_DINKEY_32_30
+    bool
+
 config SHIELD_DINKEY_32_30_LEFT
-	def_bool $(shields_list_contains,dinkey_32_30_left)
+    def_bool $(shields_list_contains,dinkey_32_30_left)
+    select SHIELD_DINKEY_32_30
 
 config SHIELD_DINKEY_32_30_RIGHT
-	def_bool $(shields_list_contains,dinkey_32_30_right)
+    def_bool $(shields_list_contains,dinkey_32_30_right)
+    select SHIELD_DINKEY_32_30
