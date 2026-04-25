@@ -1,10 +1,10 @@
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: dinkey_32_30_left nice_view_adapter nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: dinkey_32_30_right nice_view_adapter nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: dinkey_32_30_left studio-rpc-usb-uart nice_view_adapter nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
