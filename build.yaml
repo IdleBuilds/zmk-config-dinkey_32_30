@@ -4,7 +4,3 @@ include:
     shield: dinkey_32_30_left nice_view_adapter nice_view
   - board: nice_nano/nrf52840/zmk
     shield: dinkey_32_30_right nice_view_adapter nice_view
-  - board: nice_nano/nrf52840/zmk
-    shield: dinkey_32_30_left studio-rpc-usb-uart nice_view_adapter nice_view
-  - board: nice_nano/nrf52840/zmk
-    shield: settings_reset
