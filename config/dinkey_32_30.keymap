@@ -130,6 +130,12 @@
             key-positions = <13 14>;
             layers = <0 1 >;
         };
+
+        combo_studio_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <0 9>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -160,6 +166,14 @@
     &trans  &kp F9   &kp F10  &kp F11  &kp F12        &trans        &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &trans
                               &trans   &trans        &trans        &trans
             >;
+        };
+
+        extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
 };
