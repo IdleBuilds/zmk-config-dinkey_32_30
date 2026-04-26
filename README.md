@@ -1,8 +1,11 @@
-# Dinkey 34 — ZMK Firmware
+# Dinkey 32|30 — ZMK Firmware
 
-ZMK firmware config for the Dinkey 34. Runs on the nice!nano v2 with optional nice!view display.
+ZMK firmware config for the Dinkey 32|30. Runs on the nice!nano v2 with optional nice!view display.
 
-[![Dinkey 34 ZMK Build](docs/images/dinkey_34_zmk.png)](docs/images/dinkey_34_zmk.png)
+<p align="center">
+  <img src="docs/images/dinkey_32_30_32_key_config_zmk.png" alt="Dinkey 32|30 — 32-key ZMK" width="49%">
+  <img src="docs/images/dinkey_32_30_30_key_config_zmk.png" alt="Dinkey 32|30 — 30-key ZMK" width="49%">
+</p>
 
 ---
 
@@ -11,7 +14,15 @@ ZMK firmware config for the Dinkey 34. Runs on the nice!nano v2 with optional ni
 - **MCU:** nice!nano v2 (hotswap socket)
 - **Display:** nice!view (optional, hotswap)
 - **Switches:** Kailh Choc v1 hotswap
-- **Layout:** 3×5+2 split, 34 keys
+- **Layout:** 3×5+2 split, 30 or 32 keys depending on pinky column population
+
+---
+
+## About the PCB
+
+The 32|30 has a modular 4th pinky column that accepts one or two switches with zero firmware changes. Populate both for 32 keys or one for 30.
+
+There is no other board with a modular pinky column. It allows for an easy transition from a 32-key layout down to a 30-key layout without committing to a new board or reflashing anything.
 
 ---
 
@@ -21,8 +32,8 @@ Each build produces three `.uf2` files:
 
 | File | What it's for |
 |---|---|
-| `dinkey34_left-...uf2` | Left half |
-| `dinkey34_right-...uf2` | Right half |
+| `dinkey_32_30_left-...uf2` | Left half |
+| `dinkey_32_30_right-...uf2` | Right half |
 | `settings_reset-...uf2` | Clears BT pairing data |
 
 Download the latest from the **Actions** tab → most recent run → **Artifacts**.
@@ -31,7 +42,7 @@ Download the latest from the **Actions** tab → most recent run → **Artifacts
 1. Unzip the artifact
 2. Plug in the left half via USB
 3. Double-tap the reset button on the nice!nano — it'll show up as a `NICENANO` drive
-4. Drag `dinkey34_left-...uf2` onto the drive
+4. Drag `dinkey_32_30_left-...uf2` onto the drive
 5. Repeat for the right half
 
 Flash the left first. The right connects to the left over BLE.
@@ -45,7 +56,7 @@ Flash `settings_reset-...uf2` to both halves, then reflash normal firmware.
 
 No code required. ZMK Studio lets you remap keys visually in your browser.
 
-[![Dinkey 34 in ZMK Studio](docs/images/dinkey_34_zmkstudio.png)](docs/images/dinkey_34_zmkstudio.png)
+[![Dinkey 32|30 in ZMK Studio](assets/dinkey_3230_zmkstudio.png)](assets/dinkey_3230_zmkstudio.png)
 
 **What you need:**
 - Left half connected via USB
@@ -56,8 +67,8 @@ No code required. ZMK Studio lets you remap keys visually in your browser.
 1. Plug in the left half
 2. The board defaults to BLE. Switch to USB output by pressing the output toggle on Layer 2
 3. Open [studio.zmk.dev](https://studio.zmk.dev) and click Connect
-4. Select the Dinkey 34 from the device list
-5. Press **Q + P** at the same time to unlock Studio (top outer keys, positions 0 and 9)
+4. Select the Dinkey 32|30 from the device list
+5. Press **T + Y** at the same time to unlock Studio (inner top-row keys, positions 4 and 5 — always present regardless of pinky column config)
 6. Remap away — changes save to the keyboard automatically
 
 ---
@@ -67,16 +78,19 @@ No code required. ZMK Studio lets you remap keys visually in your browser.
 Layer 0 — Base
 
 ```
-┌───┬───┬───┬───┬───┐   ┌───┬───┬───┬───┬───┐
-│ Q │ W │ E │ R │ T │   │ Y │ U │ I │ O │ P │
-├───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼───┤
-│ A │ S │ D │ F │ G │   │ H │ J │ K │ L │ ; │
-├───┼───┼───┼───┼───┤   ├───┼───┼───┼───┼───┤
-│ Z │ X │ C │ V │ B │   │ N │ M │ , │ . │ / │
-└───┴───┴───┼───┼───┤   ├───┼───┼───┴───┴───┘
-            │SFT│ENT│   │BSP│SPC│
-            └───┴───┘   └───┴───┘
+┌─────┬───┬───┬───┬───┬───┐   ┌───┬───┬───┬───┬─────┐
+│ Tab │ W │ E │ R │ T │   │   │   │ Y │ U │ I │  O  │
+├─────┼───┼───┼───┼───┤   │   │   ├───┼───┼───┼─────┤
+│  A  │ S │ D │ F │ G │   │   │   │ H │ J │ K │  L  │
+├─────┼───┼───┼───┼───┤   │   │   ├───┼───┼───┼─────┤
+│  A  │ X │ C │ V │ B │   │   │   │ N │ M │ ' │  /  │
+└─────┴───┴───┴───┼───┤   │   │   ├───┼───┴───┴─────┘
+                  │SFT│   │   │BSP│
+                  └───┘   │   └───┘
+                    └─────┘
 ```
+
+> Pinky column shown populated with 2 keys (32-key config). Leave one or both unpopulated for 30-key.
 
 3 layers total. Layer 2 has Bluetooth profile switching, BT clear, and the output toggle (BLE ↔ USB).
 
@@ -84,13 +98,36 @@ Layer 0 — Base
 
 ## Gallery
 
-| ZMK Build | QMK Build |
-|---|---|
-| [![ZMK](docs/images/dinkey_34_zmk.png)](docs/images/dinkey_34_zmk.png) | [![QMK](docs/images/dinkey_34_qmk.png)](docs/images/dinkey_34_qmk.png) |
+**ZMK builds**
+<p>
+  <img src="docs/images/dinkey_32_30_32_key_config_zmk.png" alt="32-key ZMK" width="49%">
+  <img src="docs/images/dinkey_32_30_30_key_config_zmk.png" alt="30-key ZMK" width="49%">
+</p>
 
-| PCB |
-|---|
-| [![PCB](docs/images/dinkey_34_naked.png)](docs/images/dinkey_34_naked.png) |
+**QMK builds**
+<p>
+  <img src="docs/images/dinkey_32_30_32_key_config_qmk.png" alt="32-key QMK" width="49%">
+  <img src="docs/images/dinkey_32_30_30key_config_qmk.png" alt="30-key QMK" width="49%">
+</p>
+
+**No case**
+<p>
+  <img src="docs/images/dinkey_32_30_32_key_no_case.png" alt="No case 32-key" width="49%">
+  <img src="docs/images/dinkey_32_30_30_key_no_case.png" alt="No case 30-key" width="49%">
+</p>
+
+**Side profile**
+<p>
+  <img src="docs/images/dinkey_32_30_32_key_side.png" alt="Side profile 32-key" width="49%">
+  <img src="docs/images/dinkey_32_30_30_key_side.png" alt="Side profile 30-key" width="49%">
+</p>
+
+**Hardware**
+<p>
+  <img src="docs/images/dinkey_32_30_no_case_controller.png" alt="Controller and nice!view" width="32%">
+  <img src="docs/images/dinkey_32_30_case.png" alt="Case bottom" width="32%">
+  <img src="docs/images/dinkey_32_30_naked.png" alt="Bare PCB" width="32%">
+</p>
 
 ---
 
@@ -98,15 +135,15 @@ Layer 0 — Base
 
 ```
 config/
-  boards/shields/dinkey34/
-    dinkey34.dtsi            ← Row/col pin definitions for the 34 PCB
-    dinkey34_left.overlay    ← Left half wiring
-    dinkey34_right.overlay   ← Right half wiring
-    dinkey34.zmk.yml
+  boards/shields/dinkey_32_30/
+    dinkey_32_30.dtsi            ← Row/col pin definitions for the 32|30 PCB
+    dinkey_32_30_left.overlay    ← Left half wiring
+    dinkey_32_30_right.overlay   ← Right half wiring
+    dinkey_32_30.zmk.yml
     Kconfig.shield
     Kconfig.defconfig
-  dinkey34.keymap
-  dinkey34.conf
+  dinkey_32_30.keymap
+  dinkey_32_30.conf
 build.yaml
 ```
 
@@ -117,7 +154,7 @@ build.yaml
 ```bash
 west build -s app -b nice_nano/nrf52840/zmk \
   -d build/left \
-  -- -DSHIELD="dinkey34_left nice_view_adapter nice_view" \
+  -- -DSHIELD="dinkey_32_30_left nice_view_adapter nice_view" \
      -DCONFIG_ZMK_STUDIO=y \
      -DSNIPPET=studio-rpc-usb-uart
 ```
@@ -128,7 +165,7 @@ Studio is enabled on the left half only.
 
 ## Related
 
-- [Dinkey 32|30 ZMK config](https://github.com/IdleBuilds/zmk-config-dinkey_32_30)
+- [Dinkey 34 ZMK config](https://github.com/IdleBuilds/zmk-config-dinkey_34)
 - [Main repo](https://github.com/IdleBuilds/Dinkey)
 - [idlebuilds.com](https://idlebuilds.com)
 - [ZMK docs](https://zmk.dev/docs) · [ZMK Studio](https://studio.zmk.dev)
