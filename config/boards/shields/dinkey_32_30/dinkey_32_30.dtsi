@@ -7,14 +7,15 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "dinkey_32_30-layouts.dtsi"
 
-&physical_layout0 {
+&dinkey_32_30_physical_layout {
     transform = <&default_transform>;
+    kscan = <&kscan0>;
 };
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &dinkey_32_30_physical_layout;
     };
 
     default_transform: keymap_transform_0 {

@@ -1,0 +1,13 @@
+file_format: "1"
+id: dinkey_32_30
+name: Dinkey 32/30
+type: shield
+url: https://github.com/IdleBuilds/Dinkey
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio
+siblings:
+  - dinkey_32_30_left
+  - dinkey_32_30_right

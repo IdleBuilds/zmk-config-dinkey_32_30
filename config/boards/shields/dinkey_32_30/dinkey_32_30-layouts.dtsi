@@ -7,44 +7,45 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    dinkey_32_30_physical_layout: dinkey_32_30_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0  193       0     0     0>
-            , <&key_physical_attrs 100 100  100   31       0     0     0>
-            , <&key_physical_attrs 100 100  200    0       0     0     0>
-            , <&key_physical_attrs 100 100  300   28       0     0     0>
-            , <&key_physical_attrs 100 100  400   42       0     0     0>
-            , <&key_physical_attrs 100 100  700   42       0     0     0>
-            , <&key_physical_attrs 100 100  800   28       0     0     0>
-            , <&key_physical_attrs 100 100  900    0       0     0     0>
-            , <&key_physical_attrs 100 100 1000   31       0     0     0>
-            , <&key_physical_attrs 100 100 1100  193       0     0     0>
-            , <&key_physical_attrs 100 100    0  293       0     0     0>
-            , <&key_physical_attrs 100 100  100  131       0     0     0>
-            , <&key_physical_attrs 100 100  200  100       0     0     0>
-            , <&key_physical_attrs 100 100  300  128       0     0     0>
-            , <&key_physical_attrs 100 100  400  142       0     0     0>
-            , <&key_physical_attrs 100 100  700  142       0     0     0>
-            , <&key_physical_attrs 100 100  800  128       0     0     0>
-            , <&key_physical_attrs 100 100  900  100       0     0     0>
-            , <&key_physical_attrs 100 100 1000  131       0     0     0>
-            , <&key_physical_attrs 100 100 1100  293       0     0     0>
-            , <&key_physical_attrs 100 100    0  393       0     0     0>
-            , <&key_physical_attrs 100 100  100  231       0     0     0>
-            , <&key_physical_attrs 100 100  200  200       0     0     0>
-            , <&key_physical_attrs 100 100  300  228       0     0     0>
-            , <&key_physical_attrs 100 100  400  242       0     0     0>
-            , <&key_physical_attrs 100 100  700  242       0     0     0>
-            , <&key_physical_attrs 100 100  800  228       0     0     0>
-            , <&key_physical_attrs 100 100  900  200       0     0     0>
-            , <&key_physical_attrs 100 100 1000  231       0     0     0>
-            , <&key_physical_attrs 100 100 1100  393       0     0     0>
-            , <&key_physical_attrs 100 100  350  475       0     0     0>
-            , <&key_physical_attrs 100 100  450  500       0     0     0>
-            , <&key_physical_attrs 100 100  650  500       0     0     0>
-            , <&key_physical_attrs 100 100  750  475       0     0     0>
+        display-name = "Dinkey 32/30";
+        keys
+            //                     w    h     x     y    rot   rx   ry
+            = <&key_physical_attrs 100  100     0    93      0     0     0>  //  0 Q
+            , <&key_physical_attrs 100  100   100    31      0     0     0>  //  1 W
+            , <&key_physical_attrs 100  100   200     0      0     0     0>  //  2 E
+            , <&key_physical_attrs 100  100   300    28      0     0     0>  //  3 R
+            , <&key_physical_attrs 100  100   400    42      0     0     0>  //  4 T
+            , <&key_physical_attrs 100  100   700    42      0     0     0>  //  5 Y
+            , <&key_physical_attrs 100  100   800    28      0     0     0>  //  6 U
+            , <&key_physical_attrs 100  100   900     0      0     0     0>  //  7 I
+            , <&key_physical_attrs 100  100  1000    31      0     0     0>  //  8 O
+            , <&key_physical_attrs 100  100  1100    93      0     0     0>  //  9 P
+            , <&key_physical_attrs 100  100     0   193      0     0     0>  // 10 A
+            , <&key_physical_attrs 100  100   100   131      0     0     0>  // 11 S
+            , <&key_physical_attrs 100  100   200   100      0     0     0>  // 12 D
+            , <&key_physical_attrs 100  100   300   128      0     0     0>  // 13 F
+            , <&key_physical_attrs 100  100   400   142      0     0     0>  // 14 G
+            , <&key_physical_attrs 100  100   700   142      0     0     0>  // 15 H
+            , <&key_physical_attrs 100  100   800   128      0     0     0>  // 16 J
+            , <&key_physical_attrs 100  100   900   100      0     0     0>  // 17 K
+            , <&key_physical_attrs 100  100  1000   131      0     0     0>  // 18 L
+            , <&key_physical_attrs 100  100  1100   193      0     0     0>  // 19 ;
+            , <&key_physical_attrs 100  100     0   293      0     0     0>  // 20 Z
+            , <&key_physical_attrs 100  100   100   231      0     0     0>  // 21 X
+            , <&key_physical_attrs 100  100   200   200      0     0     0>  // 22 C
+            , <&key_physical_attrs 100  100   300   228      0     0     0>  // 23 V
+            , <&key_physical_attrs 100  100   400   242      0     0     0>  // 24 B
+            , <&key_physical_attrs 100  100   700   242      0     0     0>  // 25 N
+            , <&key_physical_attrs 100  100   800   228      0     0     0>  // 26 M
+            , <&key_physical_attrs 100  100   900   200      0     0     0>  // 27 ,
+            , <&key_physical_attrs 100  100  1000   231      0     0     0>  // 28 .
+            , <&key_physical_attrs 100  100  1100   293      0     0     0>  // 29 /
+            , <&key_physical_attrs 100  100   350   375      0     0     0>  // 30 thumb L1
+            , <&key_physical_attrs 100  100   450   400      0     0     0>  // 31 thumb LSH
+            , <&key_physical_attrs 100  100   650   400      0     0     0>  // 32 thumb SPC
+            , <&key_physical_attrs 100  100   750   375      0     0     0>  // 33 thumb BSP
             ;
     };
 };
