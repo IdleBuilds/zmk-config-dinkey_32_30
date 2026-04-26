@@ -98,36 +98,25 @@ Layer 0 — Base
 
 ## Gallery
 
-**ZMK builds**
-<p>
-  <img src="docs/images/dinkey_32_30_32_key_config_zmk.png" alt="32-key ZMK" width="49%">
-  <img src="docs/images/dinkey_32_30_30_key_config_zmk.png" alt="30-key ZMK" width="49%">
-</p>
+| 32-key ZMK | 30-key ZMK |
+|---|---|
+| <img src="docs/images/dinkey_32_30_32_key_config_zmk.png" width="100%"> | <img src="docs/images/dinkey_32_30_30_key_config_zmk.png" width="100%"> |
 
-**QMK builds**
-<p>
-  <img src="docs/images/dinkey_32_30_32_key_config_qmk.png" alt="32-key QMK" width="49%">
-  <img src="docs/images/dinkey_32_30_30key_config_qmk.png" alt="30-key QMK" width="49%">
-</p>
+| 32-key QMK | 30-key QMK |
+|---|---|
+| <img src="docs/images/dinkey_32_30_32_key_config_qmk.png" width="100%"> | <img src="docs/images/dinkey_32_30_30key_config_qmk.png" width="100%"> |
 
-**No case**
-<p>
-  <img src="docs/images/dinkey_32_30_32_key_no_case.png" alt="No case 32-key" width="49%">
-  <img src="docs/images/dinkey_32_30_30_key_no_case.png" alt="No case 30-key" width="49%">
-</p>
+| No case (32-key) | No case (30-key) |
+|---|---|
+| <img src="docs/images/dinkey_32_30_32_key_no_case.png" width="100%"> | <img src="docs/images/dinkey_32_30_30_key_no_case.png" width="100%"> |
 
-**Side profile**
-<p>
-  <img src="docs/images/dinkey_32_30_32_key_side.png" alt="Side profile 32-key" width="49%">
-  <img src="docs/images/dinkey_32_30_30_key_side.png" alt="Side profile 30-key" width="49%">
-</p>
+| Side profile (32-key) | Side profile (30-key) |
+|---|---|
+| <img src="docs/images/dinkey_32_30_32_key_side.png" width="100%"> | <img src="docs/images/dinkey_32_30_30_key_side.png" width="100%"> |
 
-**Hardware**
-<p>
-  <img src="docs/images/dinkey_32_30_no_case_controller.png" alt="Controller and nice!view" width="32%">
-  <img src="docs/images/dinkey_32_30_case.png" alt="Case bottom" width="32%">
-  <img src="docs/images/dinkey_32_30_naked.png" alt="Bare PCB" width="32%">
-</p>
+| Controller / nice!view | Case (bottom) | PCB |
+|---|---|---|
+| <img src="docs/images/dinkey_32_30_no_case_controller.png" width="100%"> | <img src="docs/images/dinkey_32_30_case.png" width="100%"> | <img src="docs/images/dinkey_32_30_naked.png" width="100%"> |
 
 ---
 
