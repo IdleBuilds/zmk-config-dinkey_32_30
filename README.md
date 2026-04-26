@@ -2,6 +2,8 @@
 
 ZMK firmware config for the Dinkey 32|30. Runs on the nice!nano v2 with optional nice!view display.
 
+[![Dinkey 32|30](docs/images/dinkey_32_30_zmk_front.png)](docs/images/dinkey_32_30_zmk_front.png)
+
 ---
 
 ## Hardware
@@ -51,7 +53,7 @@ Flash `settings_reset-...uf2` to both halves, then reflash normal firmware.
 
 No code required. ZMK Studio lets you remap keys visually in your browser.
 
-![Dinkey 32|30 in ZMK Studio](assets/dinkey_3230_zmkstudio.png)
+[![Dinkey 32|30 in ZMK Studio](assets/dinkey_3230_zmkstudio.png)](assets/dinkey_3230_zmkstudio.png)
 
 **What you need:**
 - Left half connected via USB
@@ -88,6 +90,30 @@ Layer 0 — Base
 > Pinky column shown populated with 2 keys (32-key config). Leave one or both unpopulated for 30-key.
 
 3 layers total. Layer 2 has Bluetooth profile switching, BT clear, and the output toggle (BLE ↔ USB).
+
+---
+
+## Gallery
+
+| 32-key ZMK | 30-key ZMK |
+|---|---|
+| [![32-key ZMK](docs/images/dinkey_32_30_32_key_config_zmk.png)](docs/images/dinkey_32_30_32_key_config_zmk.png) | [![30-key ZMK](docs/images/dinkey_32_30_30_key_config_zmk.png)](docs/images/dinkey_32_30_30_key_config_zmk.png) |
+
+| 32-key QMK | 30-key QMK |
+|---|---|
+| [![32-key QMK](docs/images/dinkey_32_30_32_key_config_qmk.png)](docs/images/dinkey_32_30_32_key_config_qmk.png) | [![30-key QMK](docs/images/dinkey_32_30_30key_config_qmk.png)](docs/images/dinkey_32_30_30key_config_qmk.png) |
+
+| No case (32-key) | No case (30-key) |
+|---|---|
+| [![no case 32](docs/images/dinkey_32_30_32_key_no_case.png)](docs/images/dinkey_32_30_32_key_no_case.png) | [![no case 30](docs/images/dinkey_32_30_30_key_no_case.png)](docs/images/dinkey_32_30_30_key_no_case.png) |
+
+| Side profile (32-key) | Side profile (30-key) |
+|---|---|
+| [![side 32](docs/images/dinkey_32_30_32_key_side.png)](docs/images/dinkey_32_30_32_key_side.png) | [![side 30](docs/images/dinkey_32_30_30_key_side.png)](docs/images/dinkey_32_30_30_key_side.png) |
+
+| Controller / nice!view | Case (bottom) | PCB |
+|---|---|---|
+| [![controller](docs/images/dinkey_32_30_no_case_controller.png)](docs/images/dinkey_32_30_no_case_controller.png) | [![case](docs/images/dinkey_32_30_case.png)](docs/images/dinkey_32_30_case.png) | [![naked](docs/images/dinkey_32_30_naked.png)](docs/images/dinkey_32_30_naked.png) |
 
 ---
 
