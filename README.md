@@ -101,9 +101,9 @@ Tab and A occupy the top and bottom pinky positions on the left. / and P on the 
 └───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┘
     │ X │ C │ V │ B │       │ N │ M │ , │ . │
     └───┴───┴───┴───┘       └───┴───┴───┴───┘
-            ┌───┬───┐   ┌───┬───┐
-            │BSP│TAB│   │SPC│ENT│
-            └───┴───┘   └───┴───┘
+            ┌───┬───┐       ┌───┬───┐
+            │BSP│TAB│       │SPC│ENT│
+            └───┴───┘       └───┴───┘
 ```
 
 The single switch sits in the home-row pinky position. Top and bottom rows are 4 keys wide per side — there is no pinky position in those rows. A anchors the left; P the right. This is a base template — Q, Z, and / are typically accessed via combos or layers.
